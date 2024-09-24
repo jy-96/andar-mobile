@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+@import './reset.css';
+@import './common.css';
+
+
+/* 사이드메뉴 누르면 메인화면 흐리게해주는 역할 */
+.dimmed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+}
+/* .scrollLock {
+    overflow: hidden;
+} */
+.scrollLock .dimmed {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* 헤더 */
+.header-slide { background: #000; color: #fff; height: 40px; text-align: center; line-height: 40px; font-size: 13px; }
+.header .header-inner { position: fixed; top: 40px; width: 100%; height: 51px; z-index: 5; background: transparent; }
+.header .top-menu { display: flex; position: relative; justify-content: space-between; height: 56px; }
+.header .top-menu h1 { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+.header .top-menu .util-area .bucket { position: relative; }
+.header .top-menu .util-area .bucket::after {
+    content: '3';
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 0;
+    top: 14px;
+    background-color: #000;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 16px;
+}
+.header .util-area { display: flex; } 
+.header .util-area > * { display: flex; align-items: center; padding: 0 10px; }
+
+
+/* bottom-menu / visible-menu */
+.header .bottom-menu{display: none;}
+.header .visible-menu{ position: relative; height: 45px; background: #fff; }
+.header .visible-menu .list {
+    display: flex;
+    width: calc(100% - 50px);
+    height: 100%;
+    align-items: center;
+    gap: 12px;
+    padding-left: 15px;
+    overflow-x: auto;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.header .visible-menu .list::-webkit-scrollbar{
+    display: none;
+}
+.header .visible-menu .item {}
+.header .visible-menu .all {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header .visible-menu .btn-all {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 28px;
+    height: 28px;
+    background: url("https://m.andar.co.kr/common/mo/btn_open_middle_bk.png") no-repeat center;
+}
+
+
+
+/* hidden-menu */
+.header .hidden-menu{
+    display: none;
+}
+.header .hidden-menu .list{
+    display: flex;
+    padding: 9px 15px;
+    flex-wrap: wrap;
+    background: #F6F6F6;
+    border-top: 1px solid #dcdcdc;
+    gap: 6px;
+}
+.header .hidden-menu .item{}
+.header .hidden-menu .item a{
+    display: block;
+    padding: 8px 17px;
+    border: 1px solid #ebebeb;
+    border-radius: 100px;
+    background: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+    letter-spacing: -0.05em;
+}
+
+
+/* 헤더 fix */
+.header.fixed .header-inner{top: 0;}
+.header.fixed .top-menu {background: #fff;}
+.header.fixed .top-menu path{fill:#000}
+/* fix menu */
+.header.fixed .bottom-menu{display: block;}
+
+/* toggle */
+.header .visible-menu.show .all {
+    display: block;
+    height: 100%;
+    line-height: 45px;
+    padding-left: 15px;
+}
+.header .visible-menu.show .list{visibility: hidden;}
+.header .visible-menu.show .btn-all{
+    background: url("https://m.andar.co.kr/common/mo/btn_open_middle_bk.png") no-repeat center;
+    transform: rotate(180deg);
+}
+
+
+
+
+
+
+/* search-pop */
+.search-pop {
+    display: none;
+}
+.search-pop.on{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("https://m.andar.co.kr/web/andar/img/mobile/search-bg/230817.jpg") no-repeat center / cover;
+}
+ .search-pop .back {
+    position: absolute;
+    width: 10px;
+    height: 18px;
+    margin: 30px;
+    background: url('https://m.andar.co.kr/_wisa/img/button/close_search.png') no-repeat center / 10px auto;
+    cursor: pointer;
+}
+.search-pop label {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 43px;
+}
+.search-pop form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 45px;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    padding: 0 50px 0 0;
+}
+.search-pop form input {
+    height: 43px;
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+}
+.search-pop form .btn-submit {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: url('https://m.andar.co.kr/_wisa/img/button/search.png') no-repeat center / 20px 20px;
+}
+.search-pop form input::placeholder {
+    color: #fff;
+}
+.search-pop form fieldset {
+    border: none;
+    height: 45px;
+}
+
+
+/* aside */
+.aside {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    z-index: 60;
+    background: #fff;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    /* overflow: hidden; */
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.aside .inner {
+    padding: 16px;
+}
+.aside.on{
+    transform: translateX(0);
+}
+.aside .util-area {
+    position: relative;
+    width: 100%;
+    height: 87px;
+    top: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.aside .util-area .btn {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 10px 26px;
+}
+.aside .util-area .title {
+    padding-top: 15px;
+    font-size: 13px;
+    color: #77797E;
+}
+.aside .util-area .title .font {
+    font-weight: 700;
+}
+.aside .util-area .btn.login {
+    color: #fff;
+    background-color: #333;
+}
+.aside .util-area .btn.join {
+    color: #333;
+}
+.aside .close {
+    z-index: 2;
+    position: absolute;
+    right: 20px;
+    top: 50px; 
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url('https://m.andar.co.kr/common/mo/icon_close.png') no-repeat;
+}
+.aside .list {
+    margin-top: 50px;
+    font-size: 16px;
+}
+.aside .list .chk .text::after {
+    content: '';
+    display: inline-block;
+    margin-left: 4px;
+    width: 6px;
+    height: 6px;
+    background-color: #EE5728;
+    border-radius: 50%;
+    vertical-align: top;
+}
+
+
+/* 사이드메뉴 나오면 배경 검게되는 효과 */
+.aside .sub {
+    display: none;
+    font-size: 15px;
+    padding: 0 2px 15px;
+}
+.aside .sub li {
+    padding: 11px 0;
+}
+.aside .down-icon{
+    position: absolute;
+    right: 20px;
+    display: inline-block;
+    width: 30px;
+    height: 28px;
+    background: url('https://m.andar.co.kr/common/mo/btn_open.png') no-repeat;
+}
+.aside .down {
+    display: block;
+    height: 100%;
+    padding: 15px 0 10px;
+}
+
+
+
+
+/* 푸터 */
+footer > * {
+    margin-top: 24px;
+}
+footer {
+    padding: 40px 16px 30px;
+    background-color: #fafafa;
+    color: #555;
+}
+footer .logo-wrap h2 {
+    width: 182px;
+    margin: 0 auto;
+}
+footer .info-wrap {
+    font-size: 14px;
+    margin-top: 54px;
+    line-height: 1.4;
+}
+footer .cs-wrap {
+    font-size: 13px;
+    line-height: 1.4;
+    margin-top: 24px;
+}
+footer .cs-wrap h3 {
+    font-weight: 500;
+}
+footer .cs-wrap strong {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 4px;
+    letter-spacing: -0.3px;
+}
+footer .sns-wrap {
+}
+.sns-wrap ul {
+    display: flex;
+    gap: 40px;
+}
+.sns-wrap ul li {}
+.sns-wrap .icon {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+}
+.sns-wrap .facebook {
+    background: url('https://m.andar.co.kr/web/andar/img/common/footer_icon/icon_facebook.svg') no-repeat;
+}
+.sns-wrap .youtube {
+    background: url('https://m.andar.co.kr/web/andar/img/common/footer_icon/icon_youtube.svg') no-repeat;
+}
+.sns-wrap .instagram {
+    background: url('https://m.andar.co.kr/web/andar/img/common/footer_icon/icon_instagram.svg') no-repeat;
+}
+
+footer .menu-wrap {}
+.menu-wrap .list {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu-wrap .list .item {
+    position: relative;
+    margin-right: 10px;
+    padding-right: 11px;
+}
+.menu-wrap .list .item::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    content: '';
+    width: 1px;
+    height: 10px;
+    background-color: #ccc;
+}
+.menu-wrap .list a {
+    font-size: 12px;
+    font-weight: 500;
+    color: #777;
+}
+
+
+address {
+    font-size: 11px;
+    font-weight: 400;
+}
+address p {
+    margin-top: 10px;
+}
+address p .bar {
+    position: relative;
+    padding-right: 11px;
+    margin-right: 10px;
+}
+address p .bar::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 1px;
+    height: 10px;
+    background-color: #ccc;
+}
+
+
+.copyright {
+    font-size: 11px;
+    color: #777;
+    line-height: 13px;
+    margin-top: 46px;
+    font-weight: bold;
+}
+
+
+.mark-wrap {
+}
+.mark-wrap .list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    height: 38px;
+}
+.mark-wrap .list .item {
+    height: 100%;
+}
+.mark-wrap .list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 100%;
+}
+.mark-wrap .list .ftc {
+    background: url('https://m.andar.co.kr/web/andar/img/common/footer_icon/icon_ffc.svg') no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.mark-wrap .list .symatec {
+    background: url('https://m.andar.co.kr/web/andar/img/common/footer_icon/icon_symantec.svg') no-repeat;
+    background-size: 36px 38px;
+    background-position: center center;
+    
+}
+.mark-wrap .list .kg {
+    background: url('https://m.andar.co.kr/web/andar/img/common/footer_icon/icon_kg.svg') no-repeat;
+    background-size: 27px 32px;
+    background-position: center center;
+}
+
+
+/* btn-top */
+.btn-top.on {
+    display: block;
+}
+.btn-top {
+    display: none;
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    border: 1px solid #e9e9e9;
+    width: 50px;
+    background: rgba(255,255,255,0.7);
+    z-index: 50;
+}
+.btn-top .kakao {
+    text-align: center;
+    padding: 5px;
+}
+.btn-top .kakao-icon {
+    display: block;
+    width: 40px;
+    height: 30px;
+    background: url("https://m.andar.co.kr/common/mo/kakao_chat.png") no-repeat center / 35px 30px;
+}
+.btn-top .kakao-text {
+    display: inline-block;
+    padding-top: 10px;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: -0.04em;
+    color: #595959;
+}
+.btn-top .up {
+    padding: 5px;
+    border-top: 1px solid #e9e9e9;
+    height: 38px;
+    background: url('https://m.andar.co.kr/common/mo/btn_top.png') no-repeat center / 19px auto;
+}

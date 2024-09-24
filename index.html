@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gilroy:wght@100;300;400;500;700&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+
+    <!-- script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./assets/js/main.js" defer></script>
+</head>
+<body>
+    <!-- 배경 어두워지게 하는 효과 -->
+    <div class="dimmed"></div>  
+
+    <!-- 윗부분 슬라이드 -->
+    <aside class="swiper header-slide">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="">
+                    <span>[~08.31]</span> 삼성카드로 결제하고 최대 16.5만 원 혜택받기
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="">
+                    <span>[애슬레저 1위]</span> 에어쿨링 레깅스 1+1 바로가기
+                </a>
+            </div>
+        </div>
+    </aside>
+    
+    <!-- 헤더 -->
+    <header class="header">
+        <div class="header-inner">
+
+            <div class="top-menu">
+                <h1>
+                    <a href="" class="logo">
+                        <span class="blind">안다르로고</span>
+                        <svg width='80' height='21' viewBox='0 0 80 21' fill='#fff' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M47.0869 5.86882C47.8839 6.25103 48.5762 6.75112 49.1488 7.36194H49.1525V0.5H51.6935V20.1642H49.1525V18.2282C48.5837 18.8461 47.8952 19.3498 47.1056 19.732C46.0465 20.2428 44.8977 20.5 43.6815 20.5C42.1734 20.5 40.7738 20.1571 39.5165 19.482C38.2591 18.8068 37.2524 17.871 36.5227 16.7065C35.7967 15.5384 35.4263 14.2167 35.4263 12.7772C35.4263 11.3519 35.8042 10.0374 36.5527 8.86935C37.2936 7.70486 38.3077 6.77612 39.5688 6.10814C40.8262 5.44374 42.2071 5.10439 43.6777 5.10439C44.8752 5.10439 46.0203 5.36158 47.0869 5.86882ZM46.4918 8.09064C45.6386 7.60127 44.6844 7.35122 43.6553 7.35122C42.585 7.35122 41.6083 7.59055 40.7476 8.06921C39.8832 8.54787 39.1984 9.2087 38.7119 10.0374C38.2217 10.8697 37.9709 11.8163 37.9709 12.8558C37.9709 13.8595 38.2217 14.7811 38.7119 15.5956C39.1984 16.4064 39.8832 17.0637 40.7476 17.5388C41.6083 18.0138 42.6 18.2567 43.6852 18.2567C44.6994 18.2567 45.6386 18.0103 46.4844 17.528C47.3301 17.0422 48.0112 16.3778 48.5089 15.5563C49.0066 14.7347 49.2611 13.8167 49.2611 12.8308C49.2611 11.8592 49.0103 10.9412 48.5201 10.0981C48.0261 9.25871 47.3451 8.58359 46.4918 8.09064ZM13.725 7.37263C13.1823 6.76538 12.52 6.26886 11.7454 5.88665C10.6975 5.3687 9.52251 5.10437 8.25391 5.10437C6.78699 5.10437 5.40239 5.44372 4.14502 6.10812C2.88765 6.77967 1.87352 7.70841 1.12883 8.86933C0.3804 10.0374 0.00244141 11.3519 0.00244141 12.7772C0.00244141 14.2167 0.372916 15.5384 1.0989 16.7064C1.82862 17.8745 2.83526 18.8068 4.09263 19.4819C5.35 20.1571 6.74956 20.5 8.25766 20.5C9.50754 20.5 10.6751 20.2392 11.7229 19.7177C12.5013 19.3319 13.1711 18.8354 13.7287 18.2317V20.1642H16.2696V5.46515H13.7287V7.37263H13.725ZM13.0925 10.0981C13.5828 10.9376 13.8335 11.8591 13.8335 12.8272C13.8335 13.8131 13.579 14.7311 13.0813 15.5527C12.5836 16.3742 11.9025 17.0386 11.0531 17.5244C10.2111 18.0067 9.26804 18.2532 8.25766 18.2532C7.1874 18.2532 6.20321 18.0138 5.33128 17.5459C4.45936 17.0779 3.7708 16.4243 3.28432 15.6027C2.7941 14.7811 2.54337 13.8524 2.54337 12.8486C2.54337 11.8127 2.79784 10.8625 3.29555 10.0303C3.79325 9.20153 4.48181 8.53713 5.34625 8.06204C6.21069 7.58696 7.17991 7.34406 8.22772 7.34406C9.26056 7.34406 10.2148 7.5941 11.068 8.08347C11.9212 8.58356 12.6023 9.25868 13.0925 10.0981ZM29.921 5.97238C28.8657 5.39728 27.6121 5.10794 26.1976 5.10794C25.1722 5.10794 24.2142 5.30798 23.3535 5.70805C22.766 5.97595 22.1673 6.38674 21.7631 6.78324V5.46515H19.2222V20.1642H21.7631V11.877C21.7631 10.5553 22.2346 9.45515 23.0317 8.60857C23.8288 7.76199 24.8728 7.3512 26.2238 7.3512C27.0433 7.3512 27.7955 7.53695 28.4616 7.9013C29.1277 8.26565 29.6404 8.7836 30.0221 9.48372C30.4 10.1803 30.5946 11.0304 30.5946 12.0056V20.1678H33.1243V12.0056C33.1243 10.6625 32.9185 9.45514 32.3647 8.41925C31.7996 7.37263 30.98 6.55106 29.921 5.97238ZM67.717 7.37263C67.1744 6.76538 66.512 6.26886 65.7374 5.88665C64.6896 5.3687 63.5145 5.10437 62.2459 5.10437C60.7753 5.10437 59.3944 5.44372 58.137 6.10812C56.8759 6.7761 55.8618 7.70483 55.1171 8.86933C54.3687 10.0374 53.9907 11.3519 53.9907 12.7772C53.9907 14.2167 54.3612 15.5384 55.0872 16.7064C55.8169 17.8709 56.8235 18.8068 58.0809 19.4819C59.3383 20.1571 60.7378 20.5 62.2459 20.5C63.4958 20.5 64.6634 20.2392 65.7112 19.7177C66.4895 19.3319 67.1594 18.8354 67.717 18.2317V20.1642H70.2579V5.46515H67.717V7.37263ZM67.0845 10.0981C67.5785 10.9376 67.8255 11.8591 67.8255 12.8272C67.8255 13.8131 67.571 14.7311 67.0733 15.5527C66.5756 16.3742 65.8945 17.0386 65.0451 17.5244C64.2031 18.0067 63.2638 18.2532 62.2497 18.2532C61.1794 18.2532 60.1952 18.0138 59.3233 17.5459C58.4514 17.0779 57.7628 16.4243 57.2763 15.6027C56.7861 14.7811 56.5354 13.8524 56.5354 12.8486C56.5354 11.8127 56.7899 10.8625 57.2876 10.0303C57.7853 9.20153 58.4738 8.53713 59.3383 8.06204C60.2027 7.58696 61.1719 7.34406 62.2197 7.34406C63.2526 7.34406 64.2068 7.5941 65.06 8.08347C65.9133 8.58356 66.5943 9.25868 67.0845 10.0981ZM75.7504 5.46519V7.23693C76.6635 5.74381 78.1117 5.16156 79.9978 5.15799V7.76203C78.6169 7.76203 77.483 8.15495 76.7945 8.8908C76.0984 9.63379 75.7504 10.734 75.7504 12.1414V20.1642H73.2095V5.46519H75.7504Z' fill='#fff'/></svg>
+                    </a>
+                </h1>
+                <div class="left util-area">
+                    <button id="menuBtn" class="category">
+                        <span class="blind">확장메뉴</span>
+                        <svg width='20' height='17' viewBox='0 0 20 17' fill='#fff' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M20 0.5H0V2H20V0.5ZM20 7.75H0V9.25H20V7.75ZM0 15H16V16.5H0V15Z' fill='#fff'/></svg>
+                    </button>
+                    <button id="searchBtn" class="search">
+                        <span class="blind">제품검색</span>
+                        <svg width='20' height='21' viewBox='0 0 20 21' fill='#fff' xmlns='http://www.w3.org/2000/svg'><path d='M20 19.2906L15.1854 14.476C16.3833 12.9929 17.1135 11.1104 17.1135 9.05676C17.1135 4.33343 13.2801 0.5 8.55676 0.5C3.83343 0.5 0 4.33343 0 9.05676C0 13.7801 3.83343 17.6135 8.55676 17.6135C10.6104 17.6135 12.4929 16.8833 13.976 15.6854L18.7906 20.5L20 19.2906ZM1.71135 9.05676C1.71135 5.28038 4.78038 2.21135 8.55676 2.21135C12.3331 2.21135 15.4022 5.28038 15.4022 9.05676C15.4022 12.8331 12.3331 15.9022 8.55676 15.9022C4.78038 15.9022 1.71135 12.8331 1.71135 9.05676Z' fill='#fff'/></svg>
+                    </button>
+                </div>
+                <div class="right util-area">
+                    <a href="" class="bucket">
+                        <span class="blind">장바구니</span>
+                        <svg width='20' height='21' viewBox='0 0 20 21' fill='#fff' xmlns='http://www.w3.org/2000/svg'><path d='M18.8889 4.94444H14.9444C14.6667 2.44444 12.5778 0.5 10 0.5C7.42222 0.5 5.33333 2.44444 5.05556 4.94444H1.11111L0 20.5H20L18.8889 4.94444ZM10 2.16667C11.6444 2.16667 13.0111 3.37778 13.2778 4.94444H6.72222C6.98889 3.37778 8.35556 2.16667 10 2.16667ZM1.78889 18.8333L2.66667 6.61111H5V8.83333H6.66667V6.61111H13.3333V8.83333H15V6.61111H17.3333L18.2111 18.8333H1.78889Z' fill='#fff'/></svg>
+                    </a>
+                    <a href="" class="myprofile">
+                        <span class="blind">마이페이지</span>
+                        <svg width='20' height='21' viewBox='0 0 20 21' fill='#fff' xmlns='http://www.w3.org/2000/svg'><path d='M12.5889 10.0334C14.0333 9.15561 15 7.58894 15 5.77783C15 3.01117 12.7667 0.777832 10 0.777832C7.23333 0.777832 5 3.01117 5 5.77783C5 7.58894 5.96667 9.15561 7.41111 10.0334C3.14444 11.2445 0 15.3334 0 20.2223H1.66667C1.66667 15.3223 5.4 11.3334 10 11.3334C14.6 11.3334 18.3333 15.3223 18.3333 20.2223H20C20 15.3334 16.8556 11.2445 12.5889 10.0334ZM10 2.4445C11.8333 2.4445 13.3333 3.9445 13.3333 5.77783C13.3333 7.61117 11.8333 9.11117 10 9.11117C8.16667 9.11117 6.66667 7.61117 6.66667 5.77783C6.66667 3.9445 8.16667 2.4445 10 2.4445Z' fill='#fff'/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bottom-menu">
+                <div class="visible-menu">
+                    <ul class="list">
+                        <li class="item"><a href="">비즈니스 위크</a></li>
+                        <li class="item"><a href="">베스트</a></li>
+                        <li class="item"><a href="">신상</a></li>
+                        <li class="item"><a href="">우먼즈</a></li>
+                        <li class="item"><a href="">맨즈</a></li>
+                        <li class="item"><a href="">주니어</a></li>
+                        <li class="item"><a href="">아울렛</a></li>
+                    </ul>
+                    <span class="all">전체메뉴</span>
+                    <button class="btn-all" id="allMenuBtn"><span class="blind">전체메뉴열기</span></button>
+                </div>
+                <div class="hidden-menu">
+                    <ul class="list">
+                        <li class="item"> <a href="">비즈니스 위크</a> </li>
+                        <li class="item"> <a href="">베스트</a> </li>
+                        <li class="item"> <a href="">신상</a> </li>
+                        <li class="item"> <a href="">우먼즈</a> </li>
+                        <li class="item"> <a href="">맨즈</a> </li>
+                        <li class="item"> <a href="">주니어</a> </li>
+                        <li class="item"> <a href="">NEW 에어엑스퍼트</a> </li>
+                        <li class="item"> <a href="">워터 컬렉션</a> </li>
+                        <li class="item"> <a href="">테니스</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- tab search-icon -->
+        <div class="search-pop">
+            <button class="back">
+                <span class="blind">뒤로가기</span>
+            </button>
+
+            <form class="inputForm" action="get">
+                <fieldset>
+                    <legend class="blind">검색</legend>
+                    <!-- <label class="label" for="input">검색어를 입력해주세요.</label> -->
+                    <input id="input" class="input" type="text" placeholder="검색어를 입력해주세요." autocomplete="off">
+                    <button type="submit" class="btn-submit"><span class="blind">전송</span></button>
+                </fieldset>
+            </form>
+        </div>
+    </header>
+
+    <!-- 사이드메뉴 부분 -->
+    <aside class="aside" id="sideNav">
+        <div class="inner">
+            <button class="close">
+                <span class="blind">닫기</span>
+            </button>
+            <div class="util-area">
+                <a href="" class="btn login">로그인</a>
+                <a href="" class="btn join">회원가입</a>
+                <h2 class="title">로그인하고, <span class="font">회원 전용 혜택 </span>확인하기</h2>
+            </div>
+            <ul class="list">
+                <li class="item">
+                    <a href="" class="down">
+                        <span class="text">비즈니스 위크</span>
+                        <span class="down-icon"></span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-item"><a href="">전체</a></li>
+                        <li class="sub-item"><a href="">우먼즈</a></li>
+                        <li class="sub-item"><a href="">맨즈</a></li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <a href="" class="down">
+                        <span class="text">베스트</span>
+                        <span class="down-icon"></span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-item"><a href="">전체</a></li>
+                        <li class="sub-item"><a href="">우먼즈</a></li>
+                        <li class="sub-item"><a href="">맨즈</a></li>
+                        <li class="sub-item"><a href="">주니어</a></li>
+                        <li class="sub-item"><a href="">홈트용품 / 액세서리</a></li>
+                    </ul>
+                </li>
+                <li class="item chk">
+                    <a href="" class="down">
+                        <span class="text">신상</span>
+                        <span class="down-icon"></span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-item"><a href="">전체</a></li>
+                        <li class="sub-item"><a href="">우먼즈</a></li>
+                        <li class="sub-item"><a href="">맨즈</a></li>
+                        <li class="sub-item"><a href="">가을신상스토리</a></li>
+                        <li class="sub-item"><a href="">신상 기간할인</a></li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <a href="" class="down">
+                        <span class="text">우먼즈</span>
+                        <span class="down-icon"></span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-item"><a href="">전체</a></li>
+                        <li class="sub-item"><a href="">하의</a></li>
+                        <li class="sub-item"><a href="">상의</a></li>
+                        <li class="sub-item"><a href="">레깅스</a></li>
+                        <li class="sub-item"><a href="">원피스 / 스커트</a></li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <a href="" class="down">
+                        <span class="text">맨즈</span>
+                        <span class="down-icon"></span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-item"><a href="">전체</a></li>
+                        <li class="sub-item"><a href="">하의</a></li>
+                        <li class="sub-item"><a href="">상의</a></li>
+                        <li class="sub-item"><a href="">티셔츠</a></li>
+                        <li class="sub-item"><a href="">슬랙스</a></li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <a href="" class="down">
+                        <span class="text">주니어</span>
+                        <span class="down-icon"></span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-item"><a href="">전체</a></li>
+                        <li class="sub-item"><a href="">남</a></li>
+                        <li class="sub-item"><a href="">여</a></li>
+                        <li class="sub-item"><a href="">주니어 스토리</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <main>
+        <section class="sc-visual">
+            <div class="swiper main-slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="https://m.andar.co.kr/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/4f40789e11d659cc934e9ca509056f1d.jpg" alt="">
+                            <div class="text-box">
+                                <h3>가을철 출근부터 라운딩까지<br>애슬레저 비즈니스 위크</h3>
+                                <p>매일 아침 손이 갈 카라티부터 슬랙스까지,<br>1만원대부터 시작되는 특가로 만나보세요.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="https://m.andar.co.kr/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/da4c9ac44bc4c32c53102bc3c9a671aa.jpg" alt="">
+                            <div class="text-box">
+                                <h3>은은하고 뮤트한 컬러<br>가을을 담은 신상을 만나요</h3>
+                                <p>기능성은 물론, 컬러까지 예쁘죠.<br>단 5일, 회원 혜택까지 놓치지 마세요.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="https://m.andar.co.kr/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/2f8af103c1e255dfc0c875f1772ecfdf.jpg" alt="">
+                            <div class="text-box">
+                                <h3>맨즈 슬랙스 판매 1위<br>풀스택으로 포멀한데 편안해요</h3>
+                                <p>기능성도 핏도 최상의 스펙인 에어스트 슬랙스,<br>지금 합리적인 가격으로 만나보세요.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="pagination"></div>
+            </div>
+        </section>
+        <section class="sc-best">
+            <h2 class="headline">BEST</h2>
+            <div class="best-tab">
+                <button class="btn clicked" data-tab="#tab-all">전체</button>
+                <button class="btn" data-tab="#tab-women">우먼즈</button>
+                <!-- <button class="btn" data-tab="#tab-men">맨즈</button>
+                <button class="btn" data-tab="#tab-junior">주니어</button>
+                <button class="btn" data-tab="#tab-training">홈트용품</button> -->
+            </div>
+            <div id="tab-all" class="best-content on">
+                <ul class="list">
+                    <li class="item">
+                        <a href="">
+                            <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202308/788530c9c177991e1459d38d545361f6.jpg" alt="[3 SET] 에어리핏 스탠다드핏 카라 티셔츠">
+                            <em class="rank">1</em>
+                        </a>
+                        <div class="text-box">
+                            <div class="review"><span>리뷰 3,721</span></div>
+                            <p>[3 SET] 에어리핏 스탠다드핏 카라 티셔츠</p>
+                            <div class="price">
+                                <strong>41%</strong>
+                                <span class="sale">69,000원</span>
+                                <span class="no_sale">117,000원</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="">
+                            <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202308/7849e7a0112ceaa7a2a0aa68b2a66ce8.jpg" alt="[3 SET] 에어리핏 맨즈 폴로 티셔츠">
+                            <em class="rank">2</em>
+                        </a>
+                        <div class="text-box">
+                            <div class="review"><span>리뷰 14,130</span></div>
+                            <p>[3 SET] 에어리핏 맨즈 폴로 티셔츠</p>
+                            <div class="price">
+                                <strong>43%</strong>
+                                <span class="sale">79,000원</span>
+                                <span class="no_sale">141,000원</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="">
+                            <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202308/f965464adab949c237ba4bce1608c3e7.jpg" alt="[1&1] 에어쿨링 와이드 레깅스 팬츠">
+                            <em class="rank">3</em>
+                        </a>
+                        <div class="text-box">
+                            <div class="review"><span>리뷰 312</span></div>
+                            <p>[1&1] 에어쿨링 와이드 레깅스 팬츠</p>
+                            <div class="price">
+                                <strong>33%</strong>
+                                <span class="sale">79,000원</span>
+                                <span class="no_sale">118,000원</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="">
+                            <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202304/8a231d054408faf8ece4abb97a4b336b.jpg" alt="[풀스택] NEW 에어스트 맨즈 슬랙스">
+                            <em class="rank">4</em>
+                        </a>
+                        <div class="text-box">
+                            <div class="review"><span>리뷰 3,476</span></div>
+                            <p>[풀스택] NEW 에어스트 맨즈 슬랙스</p>
+                            <div class="price">
+                                <strong>15%</strong>
+                                <span class="sale">69,000원</span>
+                                <span class="no_sale">82,000원</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="">
+                            <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202305/97ad763ad5dcff3c3a28caac7bec15af.jpg" alt="[1&1] NEW 에어리핏 오버핏 티셔츠">
+                            <em class="rank">5</em>
+                            <div class="new">
+                                <img src="https://m.andar.co.kr/web/upload/image_custom_4216844744581885.png" alt="신상로고">
+                            </div>
+                        </a>
+                        <div class="text-box">
+                            <div class="review"><span>리뷰 22,433</span></div>
+                            <p>[1&1] NEW 에어리핏 오버핏 티셔츠</p>
+                            <div class="price">
+                                <strong>22%</strong>
+                                <span class="sale">45,000원</span>
+                                <span class="no_sale">58,000원</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="">
+                            <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202308/dc01ffe0f1ad26dd4a3cd760fa7f1e83.jpg" alt="[1+1] 에어쿨링 지니 시그니처 레깅스">
+                            <em class="rank">6</em>
+                        </a>
+                        <div class="text-box">
+                            <div class="review"><span>리뷰 134,353</span></div>
+                            <p>[1+1] 에어쿨링 지니 시그니처 레깅스</p>
+                            <div class="price">
+                                <strong>50%</strong>
+                                <span class="sale">49,000원</span>
+                                <span class="no_sale">98,000원</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="tab-women" class="best-content">
+                <ul class="list">
+                    <li class="item">
+                        <a href="">
+                            <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202308/788530c9c177991e1459d38d545361f6.jpg" alt="[3 SET] 에어리핏 스탠다드핏 카라 티셔츠">
+                        </a>
+                        <div class="text-box">
+                            <div class="review"><span>리뷰 3,721</span></div>
+                            <p>[3 SET] 에어리핏 스탠다드핏 카라 티셔츠</p>
+                            <div class="price">
+                                <strong>41%</strong>
+                                <span class="sale">69,000원</span>
+                                <span class="no_sale">117,000원</span>
+                            </div>
+                        </div>
+                    </li>                    
+                    <li class="item">
+                        <a href="">
+                            <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202308/dd05d87a84211c1612283655548c862e.jpg" alt="[1&1] 에어쿨링 와이드 레깅스 팬츠">
+                        </a>
+                        <div class="text-box">
+                            <div class="review"><span>리뷰 312</span></div>
+                            <p>[1&1] 에어쿨링 와이드 레깅스 팬츠</p>
+                            <div class="price">
+                                <strong>33%</strong>
+                                <span class="sale">79,000원</span>
+                                <span class="no_sale">118,000원</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="">
+                            <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202306/bfc27067211aa859b0b4ce68b6c4e403.jpg" alt="[1&1] NEW 에어리핏 오버핏 티셔츠">
+                        </a>
+                        <div class="text-box">
+                            <div class="review"><span>리뷰 134,353</span></div>
+                            <p>[1+1] 에어쿨링 지니 시그니처 레깅스</p>
+                            <div class="price">
+                                <strong>50%</strong>
+                                <span class="sale">49,000원</span>
+                                <span class="no_sale">98,000원</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="best-all"><a href=""><span>베스트</span> 전체보기</a></div>
+        </section>
+        <section class="sc-banner">
+            <a href=""><img src="https://m.andar.co.kr/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/11c019bd9b5d638b2401052c5ebfc6f4.png" alt="3천원 할인쿠폰"></a>
+        </section>
+        <section class="sc-product">
+            <div class="product_1">
+                <div class="product-image">
+                    <div class="img-box">
+                        <a href=""><img src="/assets/images/men_wear.jpg" alt="비즈니스웨어"></a>
+                    </div>
+                    <div class="text-box">
+                        <a href="">
+                            <h2 class="title">"기능성인지 아무도 몰라요"<br>포멀한 애슬레저 비즈니스웨어</h2>
+                            <p class="desc">편안한데 고급스러우니까,<br>가을철 출근부터 라운딩까지 매일 입어요</p>
+                            <a href="" class="link-more">보러가기</a>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-list">
+                    <ul class="list">
+                        <li class="item">
+                            <div class="img-box">
+                                <a href="">
+                                    <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202308/a03fe4052ccd3c061bf250d57fb7a359.jpg" alt="맨즈 스웻프리 스트라이프 셔츠">
+                                </a>
+                            </div>
+                            <div class="text-box">
+                                <p>맨즈 스웻프리 스트라이프 셔츠</p>
+                                <div class="price">
+                                    <strong>15%</strong>
+                                    <span class="sale">69,000원</span>
+                                    <span class="no_sale">82,000원</span>
+                                </div>
+                            </div>
+                        </li>
+                        <hr>
+                        <li class="item">
+                            <div class="img-box">
+                                <a href="">
+                                    <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202304/8a231d054408faf8ece4abb97a4b336b.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="text-box">
+                                <p>[풀스택] NEW 에어스트 맨즈 슬랙스</p>
+                                <div class="price">
+                                    <strong>15%</strong>
+                                    <span class="sale">59,000원</span>
+                                    <span class="no_sale">78,000원</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product_2">
+                <div class="product-image">
+                    <div class="img-box">
+                        <a href=""><img src="/assets/images/girl_wear.jpg" alt="부츠컷레깅스"></a>
+                    </div>
+                    <div class="text-box">
+                        <a href="">
+                            <h2 class="title">"운동부터 일상까지 부츠컷 레깅스<br>"다리는 더 길어 보여요"</h2>
+                            <p class="desc">우아한 프론트 슬릿과 다양한 컬러.<br>오직 안다르에만 있어요.</p>
+                            <a href="" class="link-more">보러가기</a>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-list">
+                    <ul class="list">
+                        <li class="item">
+                            <div class="img-box">
+                                <a href="">
+                                    <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202308/027589b302a203d21fdfd5a180d05bf1.jpg" alt="슬릿부츠컷">
+                                </a>
+                            </div>
+                            <div class="text-box">
+                                <p>[1&1] 에어쿨링 프론트 슬릿 부츠컷 레깅스</p>
+                                <div class="price">
+                                    <strong>36%</strong>
+                                    <span class="sale">75,000원</span>
+                                    <span class="no_sale">118,000원</span>
+                                </div>
+                            </div>
+                        </li>
+                        <hr>
+                        <li class="item">
+                            <div class="img-box">
+                                <a href="">
+                                    <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202302/23470545fcda95c29d434e3f7f06a33d.jpg" alt="샤론부츠컷">
+                                </a>
+                            </div>
+                            <div class="text-box">
+                                <p>[1&1] NEW 에어쿨링 샤론 부츠컷 레깅스</p>
+                                <div class="price">
+                                    <strong>29%</strong>
+                                    <span class="sale">69,000원</span>
+                                    <span class="no_sale">98,000원</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="sc-recommend">
+            <h2 class="headline">고객님을 위한 추천 아이템</h2>
+
+
+            <!-- js에 grid 속성 추가한다 -->
+            <div class="swiper recommend-slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202303/349bd0450f26999ece122b2ac5d3f66f.jpg" alt="브라탑">
+                            <div class="text-box">
+                                <p class="name">[1&1] 에어리프리 소프트 브라탑</p>
+                                <div class="price">
+                                    <span class="sale">53,000원</span>
+                                    <span class="no_sale">58,000원</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202308/7849e7a0112ceaa7a2a0aa68b2a66ce8.jpg" alt="맨즈티셔츠">
+                            <div class="text-box">
+                                <p class="name">[3 SET] 에어리핏 맨즈 폴로 티셔츠</p>
+                                <div class="price">
+                                    <span>79,000원</span>
+                                    <span class="no_sale">141,000원</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202304/8a231d054408faf8ece4abb97a4b336b.jpg" alt="맨즈슬랙스">
+                            <div class="text-box">
+                                <p class="name">[풀스택] NEW 에어스트 맨즈 슬랙스</p>
+                                <div class="price">
+                                    <span>69,000원</span>
+                                    <span class="no_sale">82,000원</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202308/dc01ffe0f1ad26dd4a3cd760fa7f1e83.jpg" alt="레깅스">
+                            <div class="text-box">
+                                <p class="name">[1+1] 에어쿨링 지니 시그니처 레깅스</p>
+                                <div class="price">
+                                    <span>49,000원</span>
+                                    <span class="no_sale">98,000원</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202308/fc3ba51e910ca1a12febb2c5070c360c.jpg" alt="크롭탑">
+                            <div class="text-box">
+                                <p class="name">[1&1] 에어터치 페이스 크롭탑</p>
+                                <div class="price">
+                                    <span>45,000원</span>
+                                    <span class="no_sale">58,000원</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202308/6191e3b85fdf412bc3e5c853f699ab73.jpg" alt="시그니처팬티">
+                            <div class="text-box">
+                                <p class="name">[1+1] 에어쿨링 지니 시그니처 레깅스</p>
+                                <div class="price">
+                                    <span>49,000원</span>
+                                    <span class="no_sale">58,000원</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202304/4ae4ae146cbe3f9a372af6775e7d978e.jpg" alt="브라탑">
+                            <div class="text-box">
+                                <p class="name">[1&1] 비 프리 브리드 브라탑</p>
+                                <div class="price">
+                                    <span>48,000원</span>
+                                    <span class="no_sale">58,000원</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202305/97ad763ad5dcff3c3a28caac7bec15af.jpg" alt="오버핏티셔츠">
+                            <div class="text-box">
+                                <p class="name">[1&1] NEW 에어리핏 오버핏 티셔츠</p>
+                                <div class="price">
+                                    <span>45,000원</span>
+                                    <span class="no_sale">58,000원</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- pagination -->
+                <div class="pagination"></div>
+            </div>
+        </section>
+        <section class="sc-new">
+            <h2 class="headline">이달의 신상</h2>
+            <div class="new-content">
+                <ul class="list">
+                    <li class="item">
+                        <a href="">
+                            <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202308/dd05d87a84211c1612283655548c862e.jpg" alt="조거핏 레깅스">
+                        </a>
+                        <div class="text-box">
+                            <div class="review"><span>리뷰 18</span></div>
+                            <div class="name"><a href="">[1&1] NEW 에어무스 조거핏 레깅스</a></div>
+                            <div class="price">
+                                <strong>33%</strong>
+                                <span class="sale">79,000원</span>
+                                <span class="no_sale">118,000원</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="">
+                            <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202308/dc01ffe0f1ad26dd4a3cd760fa7f1e83.jpg" alt="시그니처 레깅스">
+                        </a>
+                        <div class="text-box">
+                            <div class="review"><span>리뷰 134,306</span></div>
+                            <div class="name"><a href="">[1+1] 에어쿨링 지니 시그니처 레깅스</a></div>
+                            <div class="price">
+                                <strong>33%</strong>
+                                <span class="sale">49,000원</span>
+                                <span class="no_sale">98,000원</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="">
+                            <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202308/3bfa5ca18a10685274d681d1ae366e19.jpg" alt="크롭티">
+                        </a>
+                        <div class="text-box">
+                            <div class="review"><span>리뷰 3,639</span></div>
+                            <div class="name"><a href="">[1&1] 에어로실버 크롭티</a></div>
+                            <div class="price">
+                                <strong>16%</strong>
+                                <span class="sale">42,000원</span>
+                                <span class="no_sale">50,000원</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="">
+                            <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202308/fc3ba51e910ca1a12febb2c5070c360c.jpg" alt="크롭탑">
+                        </a>
+                        <div class="text-box">
+                            <div class="review"><span>리뷰 3,335</span></div>
+                            <div class="name"><a href="">[1&1] 에어터치 페이스 크롭탑</a></div>
+                            <div class="price">
+                                <strong>22%</strong>
+                                <span class="sale">45,000원</span>
+                                <span class="no_sale">58,000원</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="link-box"><a href="" class="link-more">신상 더보기</a></div>
+            </div>
+        </section>
+
+        <section class="sc-banner2">
+            <a href="" class="title">
+                <h3>애슬레저 1위 안다르, 브랜드 스토리</h3>
+                <p class="bold">Stretch your<br>story with andar</p>
+                <p>* 애슬레저 1위, 2023 대한민국 패션품질대상<br>스포츠 애슬레저 부문</p>
+                <span>자세히 보기</span>
+            </a>
+        </section>
+
+        <section class="sc-female">
+            <div class="female_1">
+                <div class="female-title">
+                    <h2 class="headline">레깅스</h2>
+                </div>
+                <div class="swiper female-slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202308/dc01ffe0f1ad26dd4a3cd760fa7f1e83.jpg" alt="시그니처 레깅스">
+                            </a>
+                            <div class="text-box">
+                                <span class="review">리뷰 134,306</span>
+                                <p>[1+1] 에어쿨링 지니 시그니처 레깅스</p>
+                                <div class="price">
+                                    <strong>50%</strong>
+                                    <span class="sale">49,000원</span>
+                                    <span class="no_sale">98,000원</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202308/6191e3b85fdf412bc3e5c853f699ab73.jpg" alt="레깅스 팬티">
+                            </a>
+                            <div class="text-box">
+                                <span class="review">리뷰 134,306</span>
+                                <p>[4+2] 안다르 심리스 레깅스 팬티</p>
+                                <div class="price">
+                                    <strong>33%</strong>
+                                    <span class="sale">56,000원</span>
+                                    <span class="no_sale">84,000원</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202308/dd05d87a84211c1612283655548c862e.jpg" alt="조거핏 레깅스">
+                            </a>
+                            <div class="text-box">
+                                <span class="review">리뷰 18</span>
+                                <p>[1&1] NEW 에어무스 조거핏 레깅스</p>
+                                <div class="price">
+                                    <strong>33%</strong>
+                                    <span class="sale">79,000원</span>
+                                    <span class="no_sale">118,000원</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202305/b15a01925a80b40e4d24dd006b1d77d3.jpg" alt="엑스퍼트 레깅스">
+                            </a>
+                            <div class="text-box">
+                                <span class="review">리뷰 14</span>
+                                <p>에어엑스퍼트 레깅스</p>
+                                <div class="price">
+                                    <span>49,000원</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202308/dc01ffe0f1ad26dd4a3cd760fa7f1e83.jpg" alt="시그니처 레깅스">
+                            </a>
+                            <div class="text-box">
+                                <span class="review">리뷰 134,306</span>
+                                <p>[1+1] 에어쿨링 지니 시그니처 레깅스</p>
+                                <div class="price">
+                                    <strong>50%</strong>
+                                    <span class="sale">49,000원</span>
+                                    <span class="no_sale">98,000원</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202308/6191e3b85fdf412bc3e5c853f699ab73.jpg" alt="레깅스 팬티">
+                            </a>
+                            <div class="text-box">
+                                <span class="review">리뷰 134,306</span>
+                                <p>[4+2] 안다르 심리스 레깅스 팬티</p>
+                                <div class="price">
+                                    <strong>33%</strong>
+                                    <span class="sale">56,000원</span>
+                                    <span class="no_sale">84,000원</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202308/dd05d87a84211c1612283655548c862e.jpg" alt="조거핏 레깅스">
+                            </a>
+                            <div class="text-box">
+                                <span class="review">리뷰 18</span>
+                                <p>[1&1] NEW 에어무스 조거핏 레깅스</p>
+                                <div class="price">
+                                    <strong>33%</strong>
+                                    <span class="sale">79,000원</span>
+                                    <span class="no_sale">118,000원</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202305/b15a01925a80b40e4d24dd006b1d77d3.jpg" alt="엑스퍼트 레깅스">
+                            </a>
+                            <div class="text-box">
+                                <span class="review">리뷰 14</span>
+                                <p>에어엑스퍼트 레깅스</p>
+                                <div class="price">
+                                    <span>49,000원</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="female_2">
+                <div class="female-title">
+                    <h2 class="headline">브라탑</h2>
+                </div>
+                <div class="swiper female-slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202304/4ae4ae146cbe3f9a372af6775e7d978e.jpg" alt="브리드 브라탑">
+                            </a>
+                            <div class="text-box">
+                                <span class="review">리뷰 1,654</span>
+                                <p>[1&1] 비 프리 브리드 브라탑</p>
+                                <div class="price">
+                                    <strong>17%</strong>
+                                    <span class="sale">48,000원</span>
+                                    <span class="no_sale">58,000원</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202303/349bd0450f26999ece122b2ac5d3f66f.jpg" alt="소프트 브라탑">
+                            </a>
+                            <div class="text-box">
+                                <span class="review">리뷰 2,055</span>
+                                <p>[1&1] 에어리프리 소프트 브라탑</p>
+                                <div class="price">
+                                    <strong>8%</strong>
+                                    <span class="sale">53,000원</span>
+                                    <span class="no_sale">58,000원</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202305/ab6bb4b1919fdbd064e652e4dea6af51.jpg" alt="홀터넥 크롭탑">
+                            </a>
+                            <div class="text-box">
+                                <span class="review">리뷰 769</span>
+                                <p>위드브라 홀터넥 크롭탑 (패드 내장형)</p>
+                                <div class="price">
+                                    <span>35,000원</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202308/f22e8ae98a4d0b2bbbccf629f46e7a0a.jpg" alt="원숄더 브라탑">
+                            </a>
+                            <div class="text-box">
+                                <span class="review">리뷰 10</span>
+                                <p>에어쿨링 원숄더 브라탑</p>
+                                <div class="price">
+                                    <span>39,000원</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202304/4ae4ae146cbe3f9a372af6775e7d978e.jpg" alt="브리드 브라탑">
+                            </a>
+                            <div class="text-box">
+                                <span class="review">리뷰 1,654</span>
+                                <p>[1&1] 비 프리 브리드 브라탑</p>
+                                <div class="price">
+                                    <strong>17%</strong>
+                                    <span class="sale">48,000원</span>
+                                    <span class="no_sale">58,000원</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202303/349bd0450f26999ece122b2ac5d3f66f.jpg" alt="소프트 브라탑">
+                            </a>
+                            <div class="text-box">
+                                <span class="review">리뷰 2,055</span>
+                                <p>[1&1] 에어리프리 소프트 브라탑</p>
+                                <div class="price">
+                                    <strong>8%</strong>
+                                    <span class="sale">53,000원</span>
+                                    <span class="no_sale">58,000원</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202305/ab6bb4b1919fdbd064e652e4dea6af51.jpg" alt="홀터넥 크롭탑">
+                            </a>
+                            <div class="text-box">
+                                <span class="review">리뷰 769</span>
+                                <p>위드브라 홀터넥 크롭탑 (패드 내장형)</p>
+                                <div class="price">
+                                    <span>35,000원</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="https://cafe24img.poxo.com/andar01/web/product/medium/202308/f22e8ae98a4d0b2bbbccf629f46e7a0a.jpg" alt="원숄더 브라탑">
+                            </a>
+                            <div class="text-box">
+                                <span class="review">리뷰 10</span>
+                                <p>에어쿨링 원숄더 브라탑</p>
+                                <div class="price">
+                                    <span>39,000원</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sc-banner-container">
+            <div class="member banner-wrap">
+                <a href="">
+                    <img src="https://m.andar.co.kr/web/andar/banner/member/230410/banner-mo.jpg" alt="멤버십">
+                    <div class="text-box">
+                        <h3>안다르 멤버십</h3>
+                        <p>5,000원 쿠폰 지급, 상시 5% 할인<br>등급별 헤택을 놓치지마세요.</p>
+                        <span>자세히 보기</span>
+                    </div>
+                </a>
+            </div>
+            <div class="store banner-wrap">
+                <a href="">
+                    <img src="https://m.andar.co.kr/web/andar/banner/store/20210628/banner-mo.jpg" alt="스토어">
+                    <div class="text-box">
+                        <h3>안다르 오프라인 스토어 안내</h3>
+                        <p>전국 백화점과 아울렛에서 안다르 제품을 경험하세요.<br>안다르만의 스토어 멤버십을 통해<br>특별한 혜택도 함께 누려보세요.</p>
+                        <span>자세히 보기</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="logo-wrap">
+            <h2>
+                <a class="logo">
+                    <span class="blind">푸터안다로고</span>
+                     <svg width="182" height="87" viewBox="0 0 182 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M91.8775 0C89.4942 0 88.2848 1.10706 87.1064 2.89505C85.9281 4.68304 78.1612 17.4357 76.9762 19.1718C76.9762 19.1718 75.2564 18.1595 73.3147 17.7942C70.5252 17.2689 67.9999 17.5281 67.9999 17.5281C67.9999 17.5281 69.0029 19.7648 71.2664 22.6215C73.1837 25.0409 76.1573 27.4331 79.2752 29.1061C83.5048 31.3766 88.5777 32.9977 94.9865 33C100.117 33.0023 104.176 31.1579 105.514 30.3913C108.361 28.7611 108.756 27.6811 108.756 27.6811C108.756 27.6811 103.224 30.7453 98.1132 30.9279C92.4989 31.1286 90.0867 30.0666 87.4926 28.5266C85.1558 27.14 83.3717 24.6192 81.6341 22.6847C80.62 21.5551 78.9157 20.3285 78.9157 20.3285C78.9157 20.3285 83.1964 18.793 84.7853 17.8709C86.4629 16.8968 88.0052 15.438 88.9394 14.0762C89.9602 12.5858 90.4129 10.7482 92.0551 10.7482C93.6972 10.7482 94.2209 12.3152 95.4081 13.7583C96.7862 15.4358 98.3995 16.4053 100.394 17.2508C102.449 18.1211 105.842 18.8584 105.842 18.8584C105.842 18.8584 103.47 19.5642 100.825 20.8989C97.0703 22.7907 96.1049 24.2472 91.3583 24.2562C89.5075 24.2607 87.7655 23.7715 86.525 23.2258C85.2846 22.6779 83.7045 21.8211 83.7045 21.8211C83.7045 21.8211 85.8105 24.3081 86.9334 25.1784C88.9816 26.7657 91.4803 28.2809 96.6065 28.2583C100.829 28.2403 105.336 26.5605 107.405 25.1919C111.663 22.3735 113.416 18.9667 114 17.332C114 17.332 111.779 17.4628 110.341 17.7311C108.814 18.0152 106.994 18.5112 106.994 18.5112C106.994 18.5112 97.6583 4.50717 96.5643 2.89505C95.3904 1.16569 94.0367 0.00450943 91.8798 0.00450943L91.8775 0Z" fill="black"/>
+<path d="M62.523 52.1146C62.523 50.906 62.2292 49.7769 61.6436 48.7295C61.0603 47.6822 60.2582 46.8514 59.2441 46.2372C58.2255 45.6229 57.1008 45.3158 55.8701 45.3158C54.6393 45.3158 53.4837 45.6141 52.4541 46.2062C51.4266 46.8006 50.6157 47.6181 50.0213 48.6566C49.427 49.6929 49.1287 50.8574 49.1287 52.1455C49.1287 53.4337 49.4203 54.5341 50.0081 55.5615C50.5914 56.589 51.4023 57.3954 52.4408 57.981C53.4793 58.5665 54.6327 58.8582 55.9032 58.8582C57.1737 58.8582 58.2188 58.5555 59.2264 57.95C60.2362 57.3446 61.0382 56.5293 61.6304 55.5019C62.227 54.4744 62.523 53.3453 62.523 52.1168M62.3419 57.4662C61.6591 58.4936 60.751 59.3001 59.6219 59.8834C58.4928 60.4689 57.2555 60.7606 55.9054 60.7606C54.2725 60.7606 52.7745 60.3784 51.4156 59.6138C50.0545 58.8471 48.9829 57.8042 48.1963 56.4851C47.4119 55.1638 47.0186 53.6878 47.0186 52.0571C47.0186 50.4265 47.4229 48.977 48.2294 47.6579C49.0337 46.3366 50.1186 45.3003 51.4797 44.5424C52.8385 43.7868 54.3145 43.4111 55.9076 43.4111C57.2775 43.4111 58.5282 43.7028 59.6528 44.2883C60.7819 44.8717 61.6812 45.6892 62.3441 46.7343H62.4059V43.8332H64.5227V60.3695H62.4059V57.4684H62.3441L62.3419 57.4662Z" fill="black"/>
+<path d="M75.6437 45.3136C74.0727 45.3136 72.8155 45.8461 71.8786 46.9155C70.9418 47.9827 70.4733 49.3438 70.4733 50.9966V60.3673H68.3566V43.831H70.4733V45.9477H70.533C71.0566 45.1434 71.7681 44.5181 72.6674 44.074C73.5623 43.6299 74.5456 43.4089 75.615 43.4089C77.1064 43.4089 78.399 43.7315 79.4994 44.3767C80.5975 45.0219 81.4394 45.9278 82.0227 47.0967C82.606 48.2678 82.8999 49.6156 82.8999 51.1468V60.3673H80.7831V51.1468C80.7831 49.9382 80.5622 48.8953 80.1181 48.0181C79.6739 47.1409 79.0597 46.4714 78.2731 46.0074C77.4887 45.5434 76.6115 45.3136 75.6437 45.3136Z" fill="black"/>
+<path d="M101.517 52.1147C101.517 50.906 101.223 49.777 100.642 48.7296C100.056 47.6823 99.2522 46.8515 98.238 46.2372C97.2216 45.623 96.0969 45.3159 94.8684 45.3159C93.6399 45.3159 92.4489 45.6141 91.4215 46.2063C90.394 46.8007 89.5853 47.6182 89.0042 48.6567C88.4187 49.693 88.1248 50.8574 88.1248 52.1456C88.1248 53.4338 88.4165 54.5319 89.0042 55.5483C89.5875 56.5647 90.394 57.3712 91.4215 57.9656C92.4489 58.56 93.6089 58.8583 94.8993 58.8583C96.108 58.8583 97.2149 58.5556 98.2247 57.9501C99.2301 57.3447 100.034 56.5294 100.624 55.5019C101.221 54.4745 101.517 53.3454 101.517 52.1169M101.336 57.4662C100.631 58.5136 99.7095 59.3245 98.5694 59.899C97.4293 60.4735 96.2052 60.7607 94.8971 60.7607C93.262 60.7607 91.7662 60.3784 90.4073 59.6139C89.0462 58.8472 87.9746 57.8043 87.1879 56.4852C86.4013 55.1639 86.0103 53.6879 86.0103 52.0572C86.0103 50.4266 86.4146 48.9771 87.2211 47.658C88.0254 46.3367 89.1103 45.3004 90.4714 44.5425C91.8302 43.7868 93.3062 43.4112 94.8993 43.4112C96.1875 43.4112 97.4072 43.6985 98.5561 44.2707C99.7029 44.8452 100.631 45.6451 101.336 46.6747H101.398V38H103.512V60.3696H101.398V57.4684H101.336V57.4662Z" fill="black"/>
+<path d="M122.316 52.1146C122.316 50.906 122.022 49.7769 121.436 48.7295C120.853 47.6822 120.051 46.8514 119.034 46.2372C118.018 45.6229 116.893 45.3158 115.663 45.3158C114.432 45.3158 113.276 45.6141 112.247 46.2062C111.219 46.8006 110.408 47.6181 109.814 48.6566C109.22 49.6929 108.921 50.8574 108.921 52.1455C108.921 53.4337 109.213 54.5341 109.801 55.5615C110.384 56.589 111.195 57.3954 112.233 57.981C113.272 58.5665 114.425 58.8582 115.694 58.8582C116.962 58.8582 118.011 58.5555 119.017 57.95C120.027 57.3446 120.829 56.5293 121.421 55.5019C122.017 54.4744 122.313 53.3453 122.313 52.1168M122.132 57.4662C121.45 58.4936 120.541 59.3001 119.412 59.8834C118.283 60.4689 117.046 60.7606 115.694 60.7606C114.061 60.7606 112.565 60.3784 111.206 59.6138C109.845 58.8471 108.773 57.8042 107.987 56.4851C107.202 55.1638 106.809 53.6878 106.809 52.0571C106.809 50.4265 107.213 48.977 108.02 47.6579C108.824 46.3366 109.909 45.3003 111.27 44.5424C112.629 43.7868 114.105 43.4111 115.696 43.4111C117.066 43.4111 118.316 43.7028 119.443 44.2883C120.572 44.8717 121.472 45.6892 122.134 46.7343H122.196V43.8332H124.313V60.3695H122.196V57.4684H122.134L122.132 57.4662Z" fill="black"/>
+<path d="M130.266 43.831V46.2173H130.326C130.71 45.3313 131.258 44.6618 131.974 44.2088C132.69 43.7559 133.691 43.4885 134.981 43.4067V45.6428H134.953C133.459 45.7842 132.306 46.3035 131.49 47.2006C130.673 48.0976 130.266 49.2311 130.266 50.6011V60.3651H128.149V43.8288H130.266V43.831Z" fill="black"/>
+<path d="M8.05018 76.9094H9.59426V86.6095H8.61617V79.8776C8.61617 79.236 8.62399 78.6543 8.63181 77.9736C8.40751 78.6517 8.1832 79.2568 7.92237 79.9219L5.24371 86.6069H4.34908L1.67042 79.9219C1.40177 79.2516 1.17746 78.6387 0.960976 77.9892C0.968801 78.6309 0.976626 79.2203 0.976626 79.8776V86.6095H-0.00146484V76.9094H1.54261L4.17694 83.6022C4.3856 84.1395 4.60208 84.7446 4.79509 85.3184C4.9881 84.7524 5.16024 84.2594 5.41324 83.6022L8.04757 76.9094H8.05018Z" fill="black"/>
+<path d="M11.6495 81.7607C11.6495 78.8421 13.4936 76.7607 16.3652 76.7607C19.2369 76.7607 21.0731 78.8421 21.0731 81.7607C21.0731 84.6794 19.2369 86.7607 16.3652 86.7607C13.4936 86.7607 11.6495 84.6794 11.6495 81.7607ZM20.0011 81.7607C20.0011 79.3429 18.6292 77.6788 16.3678 77.6788C14.1065 77.6788 12.7267 79.3429 12.7267 81.7607C12.7267 84.1786 14.0987 85.8426 16.3678 85.8426C18.637 85.8426 20.0011 84.1786 20.0011 81.7607Z" fill="black"/>
+<path d="M29.2029 76.9094H30.2931L26.8529 86.6095H25.5018L22.0615 76.9094H23.1518L25.3688 83.2683C25.6452 84.0664 25.9348 84.9767 26.1747 85.7227C26.4512 84.8489 26.7042 84.0873 26.9885 83.2683L29.2055 76.9094H29.2029Z" fill="black"/>
+<path d="M32.161 86.6122V76.9121H38.0269V77.8146H33.1913V81.1427H37.6018V82.0164H33.1913V85.7097H38.1756V86.6122H32.161Z" fill="black"/>
+<path d="M49.1196 76.9094H50.275L46.9548 83.2083V86.6121H45.948V83.2083L42.6277 76.9094H43.7831L46.454 82.2224L49.117 76.9094H49.1196Z" fill="black"/>
+<path d="M51.0471 81.7607C51.0471 78.8421 52.8911 76.7607 55.7628 76.7607C58.6345 76.7607 60.4707 78.8421 60.4707 81.7607C60.4707 84.6794 58.6345 86.7607 55.7628 86.7607C52.8911 86.7607 51.0471 84.6794 51.0471 81.7607ZM59.3961 81.7607C59.3961 79.3429 58.0242 77.6788 55.7628 77.6788C53.5015 77.6788 52.1217 79.3429 52.1217 81.7607C52.1217 84.1786 53.4937 85.8426 55.7628 85.8426C58.032 85.8426 59.3961 84.1786 59.3961 81.7607Z" fill="black"/>
+<path d="M62.4291 82.971L62.3848 76.9121H63.415V82.9632C63.415 84.9116 64.3331 85.8297 66.0415 85.8297C67.7499 85.8297 68.6758 84.9116 68.6758 82.9632V76.9121H69.7061L69.6618 82.971C69.6461 85.4697 68.4594 86.7608 66.0415 86.7608C63.6237 86.7608 62.4526 85.4619 62.4291 82.971Z" fill="black"/>
+<path d="M79.1383 86.6122H77.8994L75.1242 82.4624H73.3402V86.6122H72.3099V76.9121H75.7789C77.7038 76.9121 78.8149 77.8146 78.8149 79.6586C78.8149 81.2418 77.8968 82.2251 76.3371 82.4259L79.1357 86.6122H79.1383ZM73.3402 77.7546V81.6487H75.6824C77.0413 81.6487 77.7481 80.9392 77.7481 79.6482C77.7481 78.3571 77.07 77.752 75.7267 77.752H73.3376L73.3402 77.7546Z" fill="black"/>
+<path d="M84.4172 86.6122V76.9121H85.4475V85.741H90.1032V86.6148H84.4172V86.6122Z" fill="black"/>
+<path d="M91.9707 86.6122V76.9121H93.001V86.6122H91.9707Z" fill="black"/>
+<path d="M95.7475 86.6122V76.9121H101.574V77.8146H96.7751V81.3435H101.149V82.2094H96.7751V86.6122H95.7449H95.7475Z" fill="black"/>
+<path d="M103.645 86.6122V76.9121H109.511V77.8146H104.675V81.1427H109.086V82.0164H104.675V85.7097H109.66V86.6122H103.645Z" fill="black"/>
+<path d="M115.027 86.6122V76.9121H120.854V77.8146H116.055V81.3435H120.429V82.2094H116.055V86.6122H115.024H115.027Z" fill="black"/>
+<path d="M122.231 81.7607C122.231 78.8421 124.075 76.7607 126.947 76.7607C129.818 76.7607 131.655 78.8421 131.655 81.7607C131.655 84.6794 129.818 86.7607 126.947 86.7607C124.075 86.7607 122.231 84.6794 122.231 81.7607ZM130.58 81.7607C130.58 79.3429 129.208 77.6788 126.947 77.6788C124.685 77.6788 123.306 79.3429 123.306 81.7607C123.306 84.1786 124.677 85.8426 126.947 85.8426C129.216 85.8426 130.58 84.1786 130.58 81.7607Z" fill="black"/>
+<path d="M140.539 86.6122H139.3L136.525 82.4624H134.741V86.6122H133.711V76.9121H137.18C139.104 76.9121 140.216 77.8146 140.216 79.6586C140.216 81.2418 139.297 82.2251 137.738 82.4259L140.536 86.6122H140.539ZM134.741 77.7546V81.6487H137.083C138.442 81.6487 139.149 80.9392 139.149 79.6482C139.149 78.3571 138.471 77.752 137.127 77.752H134.738L134.741 77.7546Z" fill="black"/>
+<path d="M152.891 76.9094H153.957L151.407 86.6095H150.063L148.339 80.334C148.198 79.8124 148.063 79.296 147.938 78.79C147.825 79.2386 147.721 79.6559 147.528 80.334L145.804 86.6095H144.461L141.91 76.9094H142.977L144.604 83.2735C144.797 84.056 144.969 84.8046 145.149 85.5636C145.342 84.7733 145.53 84.0351 145.739 83.2657L147.403 77.2146H148.477L150.134 83.297C150.35 84.0873 150.535 84.8124 150.723 85.5662C150.903 84.8046 151.073 84.0508 151.268 83.284L152.896 76.912L152.891 76.9094Z" fill="black"/>
+<path d="M162.02 86.6122L161.094 84.0665H156.499L155.573 86.6122H154.469L158.082 76.9121H159.514L163.126 86.6122H162.023H162.02ZM156.804 83.224H160.789L158.797 77.7624L156.804 83.224Z" fill="black"/>
+<path d="M171.821 86.6122H170.582L167.807 82.4624H166.023V86.6122H164.993V76.9121H168.462C170.387 76.9121 171.498 77.8146 171.498 79.6586C171.498 81.2418 170.58 82.2251 169.02 82.4259L171.819 86.6122H171.821ZM166.023 77.7546V81.6487H168.365C169.724 81.6487 170.431 80.9392 170.431 79.6482C170.431 78.3571 169.753 77.752 168.41 77.752H166.021L166.023 77.7546Z" fill="black"/>
+<path d="M173.986 86.6122V76.9121H177.226C180.426 76.9121 182.001 78.8213 182.001 81.7478C182.001 84.6742 180.426 86.6122 177.226 86.6122H173.986ZM175.053 85.7097H177.239C179.784 85.7097 180.924 84.1734 180.924 81.7478C180.924 79.3221 179.782 77.8146 177.239 77.8146H175.053V85.7097Z" fill="black"/>
+                    </svg>
+
+                </a>
+            </h2>
+        </div>
+        <p class="info-wrap">애슬레저 1위, 2023 대한민국 패션품질대상<br>스포츠 애슬레저 부문</p>
+
+        <div class="cs-wrap">
+            <h3>고객센터</h3>
+            <strong>1566-7318</strong>
+            <div class="time">
+                <p>평일 AM 09:00 ~ PM 05:30 / 주말, 공휴일 휴무</p>
+                <p>점심 PM 12:00 ~ PM 01:00</p>
+            </div>
+        </div>
+
+        <div class="sns-wrap">
+            <ul class="list">
+                <li class="item"><a href="" class="icon facebook"><span class="blind">페이스북</span></a></li>
+                <li class="item"><a href="" class="icon youtube"><span class="blind">유튜브</span></a></li>
+                <li class="item"><a href="" class="icon instagram"><span class="blind">인스타그램</span></a></li>
+            </ul>
+        </div>
+
+        <div class="menu-wrap">
+            <ul class="list">
+                <li class="item"><a href="">이용약관</a></li>
+                <li class="item"><a href="">개인정보처리방침</a></li>
+                <li class="item"><a href="">쇼핑몰 이용안내</a></li>
+                <li class="item"><a href="">강사회원 신청</a></li>
+                <li class="item"><a href="">센터회원 신청</a></li>
+            </ul>
+        </div>
+
+        <address class="address">
+            <p>
+                <span class="bar">주식회사 안다르</span>
+                <span>대표이사 : 박효영</span>
+            </p>
+            <p>사업자등록번호:103-88-00990</p>
+            <p>통신판매업신고 : 2021-서울마포-3979</p>
+            <p>주소 : 03924 서울특별시 마포구 월드컵북로54길 25 (상암동) 11층(S-City)</p>
+            <p>
+                <span class="bar">TEL : 1566-7318</span>
+                <span>호스팅제공자 : 카페24(주)</span>
+            </p>
+            <p>이용 문의 : help@andar.co.kr</p>
+            <p>마케팅제휴 문의 : partnership@andar.co.kr</p>
+            <p>해외수출 문의 : overseas@andar.co.kr</p>
+        </address>
+
+        <p class="copyright"><small>Copyright by 안다르. all rights reserved.</small></p>
+
+        <div class="mark-wrap">
+            <ul class="list">
+                <li class="item"><a href="" class="ftc"></a></li>
+                <li class="item"><a href="" class="symatec"></a></li>
+                <li class="item"><a href="" class="kg"></a></li>
+            </ul>
+        </div>
+    </footer>
+    <button class="btn-top">
+        <div class="kakao">
+            <span class="kakao-icon"></span>
+            <span class="kakao-text">톡상담</span>
+        </div>
+        <div class="up"></div>
+    </button>
+</body>
+</html>
+
