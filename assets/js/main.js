@@ -85,11 +85,11 @@ mainSlide = new Swiper('.main-slide', {
     },
 })
 
-// sc-best tab 클릭
+// sc-best 탭메뉴
 $('.best-tab .btn').click(function(){
     tabName = $(this).data('tab');
 
-    $(this).addClass('clicked').siblings().removeClass('clicked');x``
+    $(this).addClass('clicked').siblings().removeClass('clicked');
     $(tabName).addClass('on').siblings().removeClass('on');
 })
 

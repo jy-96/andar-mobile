@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <!-- link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,17 +13,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.css">
     <link rel="stylesheet" href="./assets/css/layout.css">
     <link rel="stylesheet" href="./assets/css/main.css">
-
-
     <!-- script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="./assets/js/main.js" defer></script>
 </head>
 <body>
-    <!-- 배경 어두워지게 하는 효과 -->
+    <!-- dimmed -->
     <div class="dimmed"></div>  
-
     <!-- 윗부분 슬라이드 -->
     <aside class="swiper header-slide">
         <div class="swiper-wrapper">
@@ -40,7 +36,6 @@
             </div>
         </div>
     </aside>
-    
     <!-- 헤더 -->
     <header class="header">
         <div class="header-inner">
@@ -403,8 +398,8 @@
             <a href=""><img src="https://m.andar.co.kr/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/11c019bd9b5d638b2401052c5ebfc6f4.png" alt="3천원 할인쿠폰"></a>
         </section>
         <section class="sc-product">
-            <div class="product_1">
-                <div class="product-image">
+            <div class="product_male">
+                <div class="product">
                     <div class="img-box">
                         <a href=""><img src="/assets/images/men_wear.jpg" alt="비즈니스웨어"></a>
                     </div>
@@ -452,8 +447,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="product_2">
-                <div class="product-image">
+            <div class="product_female">
+                <div class="product">
                     <div class="img-box">
                         <a href=""><img src="/assets/images/girl_wear.jpg" alt="부츠컷레깅스"></a>
                     </div>
@@ -504,8 +499,6 @@
         </section>
         <section class="sc-recommend">
             <h2 class="headline">고객님을 위한 추천 아이템</h2>
-
-
             <!-- js에 grid 속성 추가한다 -->
             <div class="swiper recommend-slide">
                 <div class="swiper-wrapper">
@@ -674,7 +667,6 @@
                 <div class="link-box"><a href="" class="link-more">신상 더보기</a></div>
             </div>
         </section>
-
         <section class="sc-banner2">
             <a href="" class="title">
                 <h3>애슬레저 1위 안다르, 브랜드 스토리</h3>
@@ -683,7 +675,6 @@
                 <span>자세히 보기</span>
             </a>
         </section>
-
         <section class="sc-female">
             <div class="female_1">
                 <div class="female-title">
@@ -916,7 +907,6 @@
                 </div>
             </div>
         </section>
-
         <section class="sc-banner-container">
             <div class="member banner-wrap">
                 <a href="">
@@ -940,14 +930,12 @@
             </div>
         </section>
     </main>
-
     <!-- 푸터 -->
     <footer>
-        <div class="logo-wrap">
-            <h2>
-                <a class="logo">
-                    <span class="blind">푸터안다로고</span>
-                     <svg width="182" height="87" viewBox="0 0 182 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <h2 class="logo-wrap">
+            <a class="logo">
+                <span class="blind">푸터안다로고</span>
+                    <svg width="182" height="87" viewBox="0 0 182 87" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M91.8775 0C89.4942 0 88.2848 1.10706 87.1064 2.89505C85.9281 4.68304 78.1612 17.4357 76.9762 19.1718C76.9762 19.1718 75.2564 18.1595 73.3147 17.7942C70.5252 17.2689 67.9999 17.5281 67.9999 17.5281C67.9999 17.5281 69.0029 19.7648 71.2664 22.6215C73.1837 25.0409 76.1573 27.4331 79.2752 29.1061C83.5048 31.3766 88.5777 32.9977 94.9865 33C100.117 33.0023 104.176 31.1579 105.514 30.3913C108.361 28.7611 108.756 27.6811 108.756 27.6811C108.756 27.6811 103.224 30.7453 98.1132 30.9279C92.4989 31.1286 90.0867 30.0666 87.4926 28.5266C85.1558 27.14 83.3717 24.6192 81.6341 22.6847C80.62 21.5551 78.9157 20.3285 78.9157 20.3285C78.9157 20.3285 83.1964 18.793 84.7853 17.8709C86.4629 16.8968 88.0052 15.438 88.9394 14.0762C89.9602 12.5858 90.4129 10.7482 92.0551 10.7482C93.6972 10.7482 94.2209 12.3152 95.4081 13.7583C96.7862 15.4358 98.3995 16.4053 100.394 17.2508C102.449 18.1211 105.842 18.8584 105.842 18.8584C105.842 18.8584 103.47 19.5642 100.825 20.8989C97.0703 22.7907 96.1049 24.2472 91.3583 24.2562C89.5075 24.2607 87.7655 23.7715 86.525 23.2258C85.2846 22.6779 83.7045 21.8211 83.7045 21.8211C83.7045 21.8211 85.8105 24.3081 86.9334 25.1784C88.9816 26.7657 91.4803 28.2809 96.6065 28.2583C100.829 28.2403 105.336 26.5605 107.405 25.1919C111.663 22.3735 113.416 18.9667 114 17.332C114 17.332 111.779 17.4628 110.341 17.7311C108.814 18.0152 106.994 18.5112 106.994 18.5112C106.994 18.5112 97.6583 4.50717 96.5643 2.89505C95.3904 1.16569 94.0367 0.00450943 91.8798 0.00450943L91.8775 0Z" fill="black"/>
 <path d="M62.523 52.1146C62.523 50.906 62.2292 49.7769 61.6436 48.7295C61.0603 47.6822 60.2582 46.8514 59.2441 46.2372C58.2255 45.6229 57.1008 45.3158 55.8701 45.3158C54.6393 45.3158 53.4837 45.6141 52.4541 46.2062C51.4266 46.8006 50.6157 47.6181 50.0213 48.6566C49.427 49.6929 49.1287 50.8574 49.1287 52.1455C49.1287 53.4337 49.4203 54.5341 50.0081 55.5615C50.5914 56.589 51.4023 57.3954 52.4408 57.981C53.4793 58.5665 54.6327 58.8582 55.9032 58.8582C57.1737 58.8582 58.2188 58.5555 59.2264 57.95C60.2362 57.3446 61.0382 56.5293 61.6304 55.5019C62.227 54.4744 62.523 53.3453 62.523 52.1168M62.3419 57.4662C61.6591 58.4936 60.751 59.3001 59.6219 59.8834C58.4928 60.4689 57.2555 60.7606 55.9054 60.7606C54.2725 60.7606 52.7745 60.3784 51.4156 59.6138C50.0545 58.8471 48.9829 57.8042 48.1963 56.4851C47.4119 55.1638 47.0186 53.6878 47.0186 52.0571C47.0186 50.4265 47.4229 48.977 48.2294 47.6579C49.0337 46.3366 50.1186 45.3003 51.4797 44.5424C52.8385 43.7868 54.3145 43.4111 55.9076 43.4111C57.2775 43.4111 58.5282 43.7028 59.6528 44.2883C60.7819 44.8717 61.6812 45.6892 62.3441 46.7343H62.4059V43.8332H64.5227V60.3695H62.4059V57.4684H62.3441L62.3419 57.4662Z" fill="black"/>
 <path d="M75.6437 45.3136C74.0727 45.3136 72.8155 45.8461 71.8786 46.9155C70.9418 47.9827 70.4733 49.3438 70.4733 50.9966V60.3673H68.3566V43.831H70.4733V45.9477H70.533C71.0566 45.1434 71.7681 44.5181 72.6674 44.074C73.5623 43.6299 74.5456 43.4089 75.615 43.4089C77.1064 43.4089 78.399 43.7315 79.4994 44.3767C80.5975 45.0219 81.4394 45.9278 82.0227 47.0967C82.606 48.2678 82.8999 49.6156 82.8999 51.1468V60.3673H80.7831V51.1468C80.7831 49.9382 80.5622 48.8953 80.1181 48.0181C79.6739 47.1409 79.0597 46.4714 78.2731 46.0074C77.4887 45.5434 76.6115 45.3136 75.6437 45.3136Z" fill="black"/>
@@ -973,13 +961,10 @@
 <path d="M162.02 86.6122L161.094 84.0665H156.499L155.573 86.6122H154.469L158.082 76.9121H159.514L163.126 86.6122H162.023H162.02ZM156.804 83.224H160.789L158.797 77.7624L156.804 83.224Z" fill="black"/>
 <path d="M171.821 86.6122H170.582L167.807 82.4624H166.023V86.6122H164.993V76.9121H168.462C170.387 76.9121 171.498 77.8146 171.498 79.6586C171.498 81.2418 170.58 82.2251 169.02 82.4259L171.819 86.6122H171.821ZM166.023 77.7546V81.6487H168.365C169.724 81.6487 170.431 80.9392 170.431 79.6482C170.431 78.3571 169.753 77.752 168.41 77.752H166.021L166.023 77.7546Z" fill="black"/>
 <path d="M173.986 86.6122V76.9121H177.226C180.426 76.9121 182.001 78.8213 182.001 81.7478C182.001 84.6742 180.426 86.6122 177.226 86.6122H173.986ZM175.053 85.7097H177.239C179.784 85.7097 180.924 84.1734 180.924 81.7478C180.924 79.3221 179.782 77.8146 177.239 77.8146H175.053V85.7097Z" fill="black"/>
-                    </svg>
-
-                </a>
-            </h2>
-        </div>
+                </svg>
+            </a>
+        </h2>
         <p class="info-wrap">애슬레저 1위, 2023 대한민국 패션품질대상<br>스포츠 애슬레저 부문</p>
-
         <div class="cs-wrap">
             <h3>고객센터</h3>
             <strong>1566-7318</strong>
@@ -988,7 +973,6 @@
                 <p>점심 PM 12:00 ~ PM 01:00</p>
             </div>
         </div>
-
         <div class="sns-wrap">
             <ul class="list">
                 <li class="item"><a href="" class="icon facebook"><span class="blind">페이스북</span></a></li>
@@ -996,7 +980,6 @@
                 <li class="item"><a href="" class="icon instagram"><span class="blind">인스타그램</span></a></li>
             </ul>
         </div>
-
         <div class="menu-wrap">
             <ul class="list">
                 <li class="item"><a href="">이용약관</a></li>
@@ -1006,7 +989,6 @@
                 <li class="item"><a href="">센터회원 신청</a></li>
             </ul>
         </div>
-
         <address class="address">
             <p>
                 <span class="bar">주식회사 안다르</span>
@@ -1023,9 +1005,7 @@
             <p>마케팅제휴 문의 : partnership@andar.co.kr</p>
             <p>해외수출 문의 : overseas@andar.co.kr</p>
         </address>
-
         <p class="copyright"><small>Copyright by 안다르. all rights reserved.</small></p>
-
         <div class="mark-wrap">
             <ul class="list">
                 <li class="item"><a href="" class="ftc"></a></li>

@@ -16,9 +16,7 @@
     opacity: 0;
     transition: .3s;
 }
-/* .scrollLock {
-    overflow: hidden;
-} */
+/* .scrollLock {overflow: hidden;} */
 .scrollLock .dimmed {
     opacity: 1;
     visibility: visible;
@@ -130,10 +128,6 @@
     background: url("https://m.andar.co.kr/common/mo/btn_open_middle_bk.png") no-repeat center;
     transform: rotate(180deg);
 }
-
-
-
-
 
 
 /* search-pop */
@@ -312,7 +306,7 @@ footer {
     background-color: #fafafa;
     color: #555;
 }
-footer .logo-wrap h2 {
+footer .logo-wrap {
     width: 182px;
     margin: 0 auto;
 }
@@ -335,8 +329,7 @@ footer .cs-wrap strong {
     margin-top: 4px;
     letter-spacing: -0.3px;
 }
-footer .sns-wrap {
-}
+footer .sns-wrap {}
 .sns-wrap ul {
     display: flex;
     gap: 40px;
@@ -418,8 +411,7 @@ address p .bar::after {
 }
 
 
-.mark-wrap {
-}
+.mark-wrap {}
 .mark-wrap .list {
     display: flex;
     gap: 20px;
